@@ -75,3 +75,52 @@ export const InterpolationSearch = (item: number, arr: number[]) => {
   else if (arr[high] === item) return high;    // Если искомого элемента нет в массиве, то -1.
   else return -1;
 }
+
+export const prefix = (str:string) => {
+  const n = str.length
+  const p = Array(n).fill(0)
+
+  let i = 1, j = 0
+
+  while (i < str.length) {
+    if (str[i] === str[j]) {
+      p[i] = j + 1
+      i ++
+      j ++
+    } else {
+      if (j === 0) {
+        p[i] = 0
+        i ++
+      } else {
+        j = p[j - 1]
+      }
+    }
+  }
+
+  return p
+}
+export const findStr = (str:string, searchString:string) => {
+  const searchStringPrefix = prefix(searchString)
+  let i = 0, j = 0
+
+  while (i < str.length) {
+    if (str[i] === searchString[j]) {
+      j ++
+      i ++
+
+      if (j === searchString.length) {
+        return i - searchString.length
+      }
+    } else {
+      if (j > 0) {
+        j = searchStringPrefix[j - 1]
+      } else {
+        i ++
+      }
+    }
+  }
+
+  if (i === str.length && j !== searchString.length) {
+    return -1
+  }
+}

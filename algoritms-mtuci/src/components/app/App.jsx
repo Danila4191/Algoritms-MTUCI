@@ -4,6 +4,7 @@ import { MainPage } from "../main/main";
 import styles from "./App.module.css";
 import { ModuleOne } from "../module-one/module-one";
 import { ModuleTwo } from "../module-two/module-two";
+import { ModuleThree } from "../main/module_three/module-three";
 function App() {
   return (
     <div className={styles.app}>
@@ -19,7 +20,7 @@ function App() {
             <ModuleTwo></ModuleTwo>
           </Route>
           <Route path="/module-three">
-          
+            <ModuleThree></ModuleThree>
           </Route>
           <Route path="/module-four">
             

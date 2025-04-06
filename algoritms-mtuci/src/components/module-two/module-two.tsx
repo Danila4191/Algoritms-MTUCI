@@ -4,11 +4,7 @@ import styles from "./module-two.module.css";
 import { SolutionLayout } from "../ui/solution-layout/solution-layout";
 import { Input } from "../ui/input/input";
 import { Button } from "../ui/button/button";
-import {
-  getArrRandom,
-  InterpolationSearch,
-  createRandomArr,
-} from "../../utils/functions";
+import { InterpolationSearch, createRandomArr } from "../../utils/functions";
 
 export const ModuleTwo = () => {
   const [inputValue, setInputValue] = useState({ value: 0 });
@@ -22,11 +18,6 @@ export const ModuleTwo = () => {
     setInputValue({ ...inputValue, value: e.target.valueAsNumber });
   };
 
-
-
-
-
-
   useEffect(() => {
     setArrValue(
       createRandomArr(100, 0, 1000).sort(function (a, b) {
@@ -34,9 +25,6 @@ export const ModuleTwo = () => {
       })
     );
   }, []);
-
-
-
 
   const onClickSearch = () => {
     setloading(true);
@@ -57,9 +45,6 @@ export const ModuleTwo = () => {
     console.log(InterpolationSearch(inputValue.value, arrValue));
     console.log(arrValue.find((item) => item === inputValue.value));
   };
-
-
-
 
   const onClickDelete = () => {
     setArrValue(arrValue.filter((item) => item !== inputValue.value));
