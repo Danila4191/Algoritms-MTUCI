@@ -35,10 +35,12 @@ export const MainPage = ({ extraClass = "" }) => {
             </p>
           </div>
         </Link>
-        <Link className={styles.link} to="/module-foure">
+        <Link className={styles.link} to="/module-four">
           <div className={`${styles.card} `}>
             <p className={`${styles.link__text} text_type_h3`}>Module four</p>
-            <p className={`${styles.link__text} text`}></p>
+            <p className={`${styles.link__text} text`}>
+              Стэк
+            </p>
           </div>
         </Link>
         <Link className={styles.link} to="/module-five">

@@ -1,0 +1,24 @@
+.input {
+  display: flex;
+  gap: 12px;
+  margin: 0 auto;
+}
+.radio__input {
+  display: flex;
+  margin-top: 15px;
+  gap: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.algo__box {
+  gap: 12px;
+  display: flex;
+  padding-top: 50px;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+.button {
+  margin-left: 50px;
+}
