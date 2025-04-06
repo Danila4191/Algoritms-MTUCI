@@ -24,6 +24,7 @@ export const MainPage = ({ extraClass = "" }) => {
             <p className={`${styles.link__text} text_type_h3`}>Module two
             </p>
             <p className={`${styles.link__text} text`}>
+              Интерполяционный поиск с простым рехэшированием
             </p>
           </div>
         </Link>

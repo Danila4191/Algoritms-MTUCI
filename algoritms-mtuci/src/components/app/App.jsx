@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { MainPage } from "../main/main";
 import styles from "./App.module.css";
 import { ModuleOne } from "../module-one/module-one";
-
+import { ModuleTwo } from "../module-two/module-two";
 function App() {
   return (
     <div className={styles.app}>
@@ -16,7 +16,7 @@ function App() {
             <ModuleOne></ModuleOne>
           </Route>
           <Route path="/module-two">
-            
+            <ModuleTwo></ModuleTwo>
           </Route>
           <Route path="/module-three">
           
