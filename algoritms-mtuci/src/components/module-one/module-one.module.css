@@ -1,0 +1,18 @@
+.imput {
+    display: flex;
+    width: 522px;
+    gap: 12px;
+    max-width: 522px;
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .algo__box {
+    gap: 12px;
+    display: flex;
+    padding-top: 120px;
+    margin: 0 auto;
+  }
+  

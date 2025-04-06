@@ -17,6 +17,15 @@ function App() {
           <Route path="/module-two">
             
           </Route>
+          <Route path="/module-three">
+          
+          </Route>
+          <Route path="/module-four">
+            
+          </Route>
+          <Route path="/module-five">
+          
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>
