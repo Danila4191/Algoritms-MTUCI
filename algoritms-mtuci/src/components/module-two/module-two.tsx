@@ -4,7 +4,7 @@ import styles from "./module-two.module.css";
 import { SolutionLayout } from "../ui/solution-layout/solution-layout";
 import { Input } from "../ui/input/input";
 import { Button } from "../ui/button/button";
-import { InterpolationSearch, createRandomArr } from "../../utils/functions";
+import { InterpolationSearch, createUniqRandomArr } from "../../utils/functions";
 
 export const ModuleTwo = () => {
   const [inputValue, setInputValue] = useState({ value: 0 });
@@ -20,7 +20,7 @@ export const ModuleTwo = () => {
 
   useEffect(() => {
     setArrValue(
-      createRandomArr(100, 0, 1000).sort(function (a, b) {
+      createUniqRandomArr(100, 0, 1000).sort(function (a, b) {
         return a - b;
       })
     );

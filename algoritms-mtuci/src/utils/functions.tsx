@@ -4,7 +4,7 @@ export const getArrRandom = (length: number) => {
   );
 };
 
- export const createRandomArr = (length: number, min: number, max: number) => {
+ export const createUniqRandomArr = (length: number, min: number, max: number) => {
     const arr = Array.from({ length: max - min + 1 }, (n, i) => min + i);
 
     for (let i = arr.length; --i > 0; ) {
