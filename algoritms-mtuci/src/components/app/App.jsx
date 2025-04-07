@@ -6,6 +6,7 @@ import { ModuleOne } from "../module-one/module-one";
 import { ModuleTwo } from "../module-two/module-two";
 import { ModuleThree } from "../module-three/module-three";
 import { ModuleFour } from "../module_four/module-four";
+import { ModuleFive } from "../module-five/module-five";
 function App() {
   return (
     <div className={styles.app}>
@@ -27,7 +28,7 @@ function App() {
             <ModuleFour></ModuleFour>
           </Route>
           <Route path="/module-five">
-          
+            <ModuleFive></ModuleFive>
           </Route>
         </Switch>
       </BrowserRouter>
