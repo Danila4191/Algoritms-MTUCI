@@ -1,0 +1,43 @@
+.imput {
+  display: flex;
+  width: 522px;
+  gap: 12px;
+  max-width: 522px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.algo__box {
+  gap: 12px;
+  display: flex;
+  padding-top: 120px;
+  margin: 0 auto;
+}
+.result {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 800px;
+  height: min-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,30px );
+  gap: 10px;
+}
+.result__item {
+  padding: 0;
+  margin: 0px;
+}
+.result__table {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: auto  auto auto ;
+  text-align: center;
+  gap: 50px
+}
+.result__item_active {
+background-color: red;
+}

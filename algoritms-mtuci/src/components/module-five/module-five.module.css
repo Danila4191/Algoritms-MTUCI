@@ -1,0 +1,41 @@
+.imput {
+  display: flex;
+  width: 522px;
+  gap: 12px;
+  max-width: 522px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.algo__box {
+  gap: 12px;
+  display: flex;
+  padding-top: 120px;
+  margin: 0 auto;
+}
+.result {
+  padding-top: 10px;
+  margin: 0 auto;
+ 
+  display: flex;
+  justify-content: center;
+}
+.result__item {
+  padding: 0;
+  margin: 0px;
+}
+.result__table {
+  margin-top: 30px;
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: auto auto auto;
+  gap: 10px
+}
+.canvas {
+  width: 800px;
+  height: 800px;
+  border: 1px solid #000;
+  z-index: 4;
+}
